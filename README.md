@@ -4,13 +4,14 @@ This is a captivating ReactJS MCQ game application featuring one-question-per-sc
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Components](#components)
-- [Styling](#styling)
-- [Deployment](#deployment)
+- [Features] (#features)
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [Project Structure] (#project-structure)
+- [Components] (#components)
+- [Styling] (#styling)
+- [Deployment] (#deployment)
+
 
 
 ## Features
@@ -28,7 +29,8 @@ This is a captivating ReactJS MCQ game application featuring one-question-per-sc
 ### Steps
 
 1. **Clone the repository:**
-   - Download the project code from GitHub.
+   - Download the project code from GitHub .
+     Github link :- https://github.com/AmriteshRaj123/Quiz-Game-App.git
 
 2. **Install dependencies:**
    - Run `npm install` to install all necessary packages.
@@ -41,6 +43,8 @@ This is a captivating ReactJS MCQ game application featuring one-question-per-sc
 - Navigate through the questions by selecting an answer.
 - Each correct answer increases your score.
 - At the end of the quiz, your final score will be displayed.
+
+
 
 ## Project Structure
 
@@ -90,4 +94,5 @@ This is a captivating ReactJS MCQ game application featuring one-question-per-sc
 
 3. **Live URL:**
    - Your deployed app will be accessible via a URL provided by Vercel.
+   - Vercel link :- https://quiz-game-app-six.vercel.app/  
 
