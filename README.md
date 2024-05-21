@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# MCQ Game App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a captivating ReactJS MCQ game application featuring one-question-per-screen navigation, a user-friendly design, and a final score display upon completing the questions.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Components](#components)
+- [Styling](#styling)
+- [Deployment](#deployment)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- One-question-per-screen navigation.
+- User-friendly design.
+- Displays the final score upon completion of all questions.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
+   - Download the project code from GitHub.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
+   - Run `npm install` to install all necessary packages.
 
-### `npm run eject`
+3. **Start the development server:**
+   - Run `npm start` to start the application on `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Navigate through the questions by selecting an answer.
+- Each correct answer increases your score.
+- At the end of the quiz, your final score will be displayed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **public/**: Contains the HTML file and static assets.
+- **src/**: Contains the React components, CSS files, and other assets.
+  - **components/**: Contains individual React components.
+  - **App.js**: Main application component.
+  - **App.css**: Main stylesheet for the application.
 
-## Learn More
+## Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Question Component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Responsible for displaying the question and the multiple-choice options.
+- Takes props for the question text, options, and a callback function to handle the user's answer.
 
-### Code Splitting
+### Quiz Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Manages the state of the quiz, including the current question index and the user's score.
+- Handles the logic for progressing through questions and calculating the final score.
+- Conditionally renders either the current question or the final score based on the state.
 
-### Analyzing the Bundle Size
+### Score Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Displays the user's final score after all questions have been answered.
 
-### Making a Progressive Web App
+### App Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The main component that renders the `Quiz` component.
+- Includes basic structure and styling for the application.
 
-### Advanced Configuration
+## Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **App.css**: Contains styles to ensure the application is visually appealing and user-friendly.
+  - Centers content.
+  - Styles buttons and containers for better user interaction.
 
-### Deployment
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Deploy on Vercel
 
-### `npm run build` fails to minify
+1. **Install Vercel CLI:**
+   - Use `npm install -g vercel` to install Vercel globally.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Deploy the project:**
+   - Run `vercel` and follow the prompts to deploy the application.
+
+3. **Live URL:**
+   - Your deployed app will be accessible via a URL provided by Vercel.
+
